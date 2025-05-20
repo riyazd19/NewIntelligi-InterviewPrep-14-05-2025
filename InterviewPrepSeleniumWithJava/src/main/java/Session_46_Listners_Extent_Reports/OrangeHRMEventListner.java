@@ -11,7 +11,8 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-@Listeners(Session_46_Listners_Extent_Reports.MyListener.class)
+@Listeners(Session_46_Listners_Extent_Reports.MyListener.class)//this way also we can
+// use listner and other way is to execute it from XML
 
 public class OrangeHRMEventListner {
 

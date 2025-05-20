@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Session_46_Listners_Extent_Reports.MyListener"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true"
+          name="D:/InterviewPrepIntelligi/NewIntelligi-InterviewPrep-14-05-2025/InterviewPrepSeleniumWithJava/src/main/java/org/example/SDET_YouTube/Session_46_Listners_Extent_Reports">
+        <classes>
+            <class name="Session_46_Listners_Extent_Reports.OrangeHRMEventListner">
+            </class>
+        </classes>
+    </test>
+</suite>
