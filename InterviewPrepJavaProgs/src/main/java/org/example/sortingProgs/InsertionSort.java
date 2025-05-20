@@ -16,7 +16,7 @@ public class InsertionSort {
 
     }
 
-    private static void insertionSort(int[] arr) {
+    public static void insertionSort(int[] arr) {
         for(int i=1;i<arr.length;i++){
             int currentValue=arr[i];
             int j=i-1;
@@ -29,7 +29,7 @@ public class InsertionSort {
 
     }
 
-    private static void displayArray(int[] arr) {
+    public static void displayArray(int[] arr) {
         for(int x:arr){
             System.out.print(+x+" ");
         }
