@@ -36,7 +36,7 @@ public class OrangeHRMEventListner {
 
     @Test(priority = 2)
     void testAppUrl() {
-        Assert.assertEquals(driver.getCurrentUrl(), "oohttps://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+        Assert.assertEquals(driver.getCurrentUrl(), "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
     }
 
     @Test(priority = 3, dependsOnMethods = {"testAppUrl"})

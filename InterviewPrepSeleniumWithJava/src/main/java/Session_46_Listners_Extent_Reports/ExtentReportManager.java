@@ -9,6 +9,8 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+
+
 public class ExtentReportManager implements ITestListener {
 
     //below three are mainly three classes
@@ -17,7 +19,10 @@ public class ExtentReportManager implements ITestListener {
     public ExtentTest test;//creating test entries update status
 
     public void onStart(ITestContext context) {
-        sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/reports/myReports.html");
+        String timestamp = new java.text.SimpleDateFormat("yyyyMMdd_HHmmss").format(new java.util.Date());
+        String reportPath = System.getProperty("user.dir") + "/reports/ExtentReport_" + timestamp + ".html";
+        sparkReporter = new ExtentSparkReporter(reportPath);
+        //sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/reports/myReports.html");
         sparkReporter.config().setDocumentTitle("AutomationReport");
         sparkReporter.config().setReportName("Functional Testing");
         sparkReporter.config().setTheme(Theme.DARK);
