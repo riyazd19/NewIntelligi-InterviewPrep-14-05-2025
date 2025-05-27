@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="D:/InterviewPrepIntelligi/NewIntelligi-InterviewPrep-14-05-2025/InterviewPrepSeleniumWithJava/src/main/java/session_45_DataProvider_ParallelTesting/ParamTest.java">
+        <classes>
+            <class name="session_45_DataProvider_ParallelTesting.ParamTest">
+                <methods>
+                    <include name="testLogo"/>
+                    <include name="testTitle"/>
+                    <include name="testUrl"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
