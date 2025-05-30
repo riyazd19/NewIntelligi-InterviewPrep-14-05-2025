@@ -1,0 +1,4 @@
+JavaScriptExecutor is an interface implemented by "remoteWebDriver" along with WebDriver and TakeScreenshot
+interface.
+JavaScriptExecutor >> is having executeScript() method >> with which we can execute javaScript
+
