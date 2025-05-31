@@ -2,3 +2,19 @@ JavaScriptExecutor is an interface implemented by "remoteWebDriver" along with W
 interface.
 JavaScriptExecutor >> is having executeScript() method >> with which we can execute javaScript
 
+NOTE: - elementIntercepted exception >> calling click method and click method is not able to execute JS
+ internally >>
+ so instead of click we will use executeScript()
+
+ >> Using JSExecutor instead of .click() & .sendKeys()
+
+ >> Interesting part
+ if WebDriver driver= new ChromeDriver();
+ Then you need to cast the the >>Upcasting
+    JavascriptExecutor js= (JavascriptExecutor) driver;
+
+ else if
+ ChromeDriver driver= new ChromeDriver();
+ Then
+JavascriptExecutor js= driver; >> this will do without casting
+
