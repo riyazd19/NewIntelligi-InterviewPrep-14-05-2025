@@ -18,7 +18,8 @@ public class FullPageScreenShot {
         driver.manage().window().maximize();
         driver.get("https://testautomationpractice.blogspot.com/");
         TakesScreenshot ts = (TakesScreenshot) driver;
-        File sourceFile=ts.getScreenshotAs(OutputType.FILE);//Taking screenshot
+        File sourceFile=ts.getScreenshotAs(OutputType.FILE);//This will take screenshot but where is it in memory user doest know yet
+        // for that we are creating a taget file in next step
         //File targetFile= new File(System.getProperty("user.dir")+" " +
           //      "NewIntelligi-InterviewPrep-14-05-2025\\" +
             //    "InterviewPrepSeleniumWithJava\\" +
@@ -28,7 +29,7 @@ public class FullPageScreenShot {
                 "NewIntelligi-InterviewPrep-14-05-2025\\InterviewPrepSeleniumWithJava\\" +
                "screenShots\\fullPage.png");//specifying path where to save
 
-        System.out.println("commit only");
+        //System.out.println("commit only");
 
 
 
