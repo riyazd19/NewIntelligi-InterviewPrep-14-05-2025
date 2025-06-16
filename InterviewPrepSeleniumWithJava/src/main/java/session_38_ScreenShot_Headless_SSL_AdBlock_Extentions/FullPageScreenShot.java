@@ -27,7 +27,7 @@ public class FullPageScreenShot {
 
         File targetFile= new File("D:\\InterviewPrepIntelligi\\" +
                 "NewIntelligi-InterviewPrep-14-05-2025\\InterviewPrepSeleniumWithJava\\" +
-               "screenShots\\fullPage.png");//specifying path where to save
+               "screenShots\\fullPage2.png");//specifying path where to save
 
         //System.out.println("commit only");
 
