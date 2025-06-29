@@ -29,13 +29,19 @@ public class TakeInput {
         FileInputStream fis= new FileInputStream("InterviewPrepSeleniumWithJava/TestData/TestData.xlsx");
         Workbook wb= new XSSFWorkbook(fis);
         Sheet sheet= wb.getSheetAt(0);
-        for (int i=0;i<=sheet.getLastRowNum();i++) {
-            Row row = sheet.getRow(i);
+        //for (int i=1;i<=sheet.getLastRowNum();i++) {
+            Row row = sheet.getRow(1);
             String name = row.getCell(0).getStringCellValue();
 
-            driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys(name);
+           WebElement First_name=driver.findElement(By.xpath("//input[@name='firstname']"));
+           firstName.clear();
+           firstName.sendKeys(name);
+            Thread.sleep(2000);
 
-        }
+
+        wb.close();
+        fis.close();
+       // driver.quit();
 
 
 
